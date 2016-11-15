@@ -1,0 +1,45 @@
+配置管理器:
+	Release x64
+vc++目录：
+D:\OSG\OpenSceneGraph\bin;
+D:\OSG\OpenSceneGraph\include;
+D:\OSG\OpenSceneGraph\lib;
+链接器
+D:\OSG\3rdParty\x64\lib;D:\OSG\OpenSceneGraph\lib;
+输入
+osgViewer.lib;osgDB.lib;OpenThreads.lib;osg.lib;
+osgGA.lib;osgAnimation.lib;osgUtil.lib;osgText.lib;
+osgParticle.lib;osgSim.lib;osgWidget.lib;
+
+-----------------------------------------------------------
+相机在世界坐标系统中的位置姿态矩阵等于相机观察矩阵（视图矩阵）的逆矩阵。
+
+	CosgViewerMFCSDIVSView *pView = (CosgViewerMFCSDIVSView *)((CFrameWndEx *)AfxGetMainWnd())->GetActiveView();
+	std::stringstream os;
+	os << pView->getOSGViewerAspectRatio();
+	std::string doubleString = os.str();
+	m_wndOutputBuild.AddString((LPCTSTR)doubleString.c_str());
+	
+	
+	添加模型
+	添加火焰效果
+	Pan模式
+	设置相机浏览模式为Pan模式
+avatar
+bignathan
+cessna
+cessnafire
+cow
+dumptruck
+example
+Jansens
+glider
+morphing
+lz
+morphtarget_shape0
+morphtarget_shape1
+nathan
+robot
+
+------------------------------------------------------------------------
+CMFCPropertyGridProperty
